@@ -183,6 +183,9 @@ def generate():
     save_images_cv2(x, save_image_path)
     
 if __name__ == '__main__':
+    # Training and generate are put in one file because I'm too lazy to write another one
+    # Run train
     run_train()
+    # Run generate
     #generate()
     
