@@ -1,3 +1,6 @@
+# This file is from https://github.com/fyu/lsun/blob/master/data.py
+# with minimal code modified
+
 from __future__ import print_function
 import argparse
 import cv2
