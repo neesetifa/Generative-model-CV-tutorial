@@ -26,7 +26,7 @@ class CustomDataset(Dataset):
         image = cv2.resize(cropped_image, (self.image_size,self.image_size))
         image = torch.from_numpy(image.astype(np.float32)).permute(2,0,1) # [3,H,W]
         image = (image/255.-0.5)/0.5
-        return image
+        return (image,)
 
     def __len__(self):
         return len(self.lines)
